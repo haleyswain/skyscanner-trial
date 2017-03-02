@@ -1,5 +1,9 @@
 <h1>Flight?</h1>
 
 <% @flight.each do |flight| %>
-  <p><%= flight["Price"] %></p><br>
+  <p>Flight Prices: <%= flight['Price'] %></p><br>
 <% end %>
+
+<% @location.each do |location| %>
+  <p>From:<%= location["Name"] %></p>
+  <% end %>
